@@ -1,7 +1,17 @@
 This version of the couchdb container uses env variables that must be set prior to launching in order for it to work
 
+First we need to setup our caddy network
+
+
+```
+# start but running this on the host
+docker network create caddy-network 
+
+
 
 the variables that need to be set and what they are for is below
+
+Set theses inside the .env file
 
 environment variables 
 - **_SERVER_URL_**: This is the complete URL that will be used to serve the CouchDB instance. Example: `[https://obsidian.example.com`](https://obsidian.example.com`/)
@@ -10,11 +20,8 @@ environment variables
 - **_COUCHDB_DATABASE_**: The name of the database within CouchDB that will be used to contain your sync data for Obsidian.
 - **COUCHDB_DATA**: An existing path on your host’s filesystem where the CouchDB data will be saved. This folder will have to be backed up regularly to safeguard your notes. 
 
-variables can be set in a few ways but the simple quick way is to max_document_size
 
-`export THE_VARIABLE='the data you want in the variable'`
-
-do that for all of them then run docker compose up
+once all of them are set up in your .env file  run docker compose up
 
 
 
