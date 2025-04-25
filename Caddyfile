@@ -1,6 +1,9 @@
 {
+
+    email youremail@here
+
 }
 
-your.domain.name {
-        reverse_proxy couchdb-obsidian-livesync:5984
+obsidian.youdomain.name {
+    reverse_proxy couchdb-obsidian-livesync:5984
 }

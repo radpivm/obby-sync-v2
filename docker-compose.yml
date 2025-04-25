@@ -12,6 +12,8 @@ services:
       - "5984:5984"
     volumes:
       - ${COUCHDB_DATA}:/opt/couchdb/data
+    networks:
+      - caddy-network
 
   caddy:
     image: docker.io/caddy
@@ -23,4 +25,9 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ${CADDY_DATA}:/data
       - ${CADDY_CONFIG}:/config
+    networks:
+      - caddy-network
 
+networks:
+  caddy-network:
+    external: true
