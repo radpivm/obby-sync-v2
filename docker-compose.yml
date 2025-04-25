@@ -13,4 +13,14 @@ services:
     volumes:
       - ${COUCHDB_DATA}:/opt/couchdb/data
 
+  caddy:
+    image: docker.io/caddy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ${CADDY_DATA}:/data
+      - ${CADDY_CONFIG}:/config
 
