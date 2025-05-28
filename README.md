@@ -17,9 +17,9 @@ First we need to setup our caddy network
 
 
 ```
-# start but running this on the host
+# start by running this on the host
 docker network create caddy-network 
-
+```
 
 
 the variables that need to be set and what they are for is below
@@ -58,3 +58,4 @@ The container expects the _user table to exist on your couchDB instance otherwis
 
 ```# Replace "admin" and "password" with your CouchDB credentials created above  
 curl -u admin:password -X PUT http://localhost:5984/_users
+```
