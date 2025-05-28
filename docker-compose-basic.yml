@@ -9,6 +9,6 @@ services:
       COUCHDB_PASSWORD: yourpassword
       COUCHDB_DATABASE: nameofyourdatabase
     ports:
-      - "5984:5984"
+      - "5984:5984"  # change the external port if rtunning multiple instances
     volumes:
       - ./data:/opt/couchdb/data
