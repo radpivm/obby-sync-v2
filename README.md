@@ -1,4 +1,15 @@
+# basic version
+
 To run just the couchdb container without any of the other stuff use the docker compose basic file - Note that version does not use variables all stuff must be declared in the docker-compose.yml file.
+to use the basic version
+
+```
+mv docker-compose-basic.yml docker-compose.yml
+docker compose up -d
+```
+go to confirming everything is working section below
+
+# full version 
 
 This version of the couchdb container uses env variables that must be set prior to launching in order for it to work
 
@@ -25,7 +36,7 @@ environment variables
 
 once all of them are set up in your .env file  run docker compose up
 
-
+### Confirming everythings working
 
 once your container is up and running Confirm that your CouchDB application is running and has been correctly configured by navigating to the host IP on the CouchDB port. Log in and confirm that your settings have been applied.
 
