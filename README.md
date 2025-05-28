@@ -1,3 +1,5 @@
+To run just the couchdb container without any of the other stuff use the docker compose basic file - Note that version does not use variables all stuff must be declared in the docker-compose.yml file.
+
 This version of the couchdb container uses env variables that must be set prior to launching in order for it to work
 
 First we need to setup our caddy network

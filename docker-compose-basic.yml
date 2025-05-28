@@ -4,11 +4,11 @@ services:
     container_name: couchdb-obsidian-livesync
     restart: always
     environment:
-      SERVER_URL: ${SERVER_URL}
-      COUCHDB_USER: ${COUCHDB_USER}
-      COUCHDB_PASSWORD: ${COUCHDB_PASSWORD}
-      COUCHDB_DATABASE: ${COUCHDB_DATABASE}
+      SERVER_URL: http://ip.address:port or https://domain.name-if-already--using a reverse proxy
+      COUCHDB_USER: username
+      COUCHDB_PASSWORD: yourpassword
+      COUCHDB_DATABASE: nameofyourdatabase
     ports:
       - "5984:5984"
     volumes:
-      - ${COUCHDB_DATA}:/opt/couchdb/data
+      - ./data:/opt/couchdb/data
