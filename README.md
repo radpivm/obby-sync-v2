@@ -9,7 +9,7 @@ docker compose up -d
 ```
 go to confirming everything is working section below
 
-# full version 
+# full version - runs the couchdb along with caddy as a reverse proxy and watchtower for updates
 
 This version of the couchdb container uses env variables that must be set prior to launching in order for it to work
 
