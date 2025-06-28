@@ -27,7 +27,7 @@ the variables that need to be set and what they are for is below
 Set theses inside the .env file
 
 environment variables 
-- **_SERVER_URL_**: This is the complete URL that will be used to serve the CouchDB instance. Example: `[https://obsidian.example.com`](https://obsidian.example.com`/)
+- **_SERVER_URL_**: This is the complete URL that will be used to serve the CouchDB instance. Example: `[https://obsidian.example.com`](https://obsidian.example.com`/) - Or if not using a domain name then put the IP address of the server this will be running on
 - **_COUCHDB_USER_**: The administrator user that will be used to manage your CouchDB instance. Example: `obsidian`
 - **_COUCHDB_PASSWORD_**: The password for the CouchDB admin user.
 - **_COUCHDB_DATABASE_**: The name of the database within CouchDB that will be used to contain your sync data for Obsidian.
